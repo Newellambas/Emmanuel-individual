@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" type="image/jpg" href="logo.jpg">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">UNJI</a>
+
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="edu.html" >Journey</a>
+            <a href="skills.html" >Skills</a>
+            <a href="extra.html" >Extra</a>
+            <a href="gal.html" >Gallery</a>
+            <a href="cont.html" >Contact</a>
+        </nav>
+
+
+
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="unji.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Edwinnie</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Welcome to my Biographic Website. Here, I share a glimpse into my life, showcasing some small but significant details about who I am, my journey, and the things that inspire me. Whether you're here to learn about my background, explore my career, or discover my passions, this site offers a personal and curated look at the experiences that have shaped me. Take a moment to get to know me better, and feel free to reach out if you'd like to connect!</p>
+            <div class="social-icons">
+                <a href="http://www.linkedin.com/in/edwinnie-einstein-unji-1aa36329a"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/einstein.unji"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://open.spotify.com/artist/3WIPTDnjBUear8fC9YYKLc?si=GFVeTfIeQvi_LdUihbrYcA"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.instagram.com/unji.wav/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+<video autoplay loop muted plays-inline class="back-video">
+                <source src="vid3.mp4" type="video/mp4">
+                </video>
+
+            <a href="file:///C:/Users/User/Desktop/EDWINNIE%20EINSTIEN%20UNJI/beautiful-wonderful-cute-kitten-wallpaper-600nw-2435308283.webp" class="btn">WANNA SEE SOMETHING COOL?</a>
+        </div>
+    </section>
+</body>
+</html>
+
+<footer style="position: fixed; bottom: 0; width: 100%; background-color: #161616; text-align: center; padding: 1rem;">
+    <div id="clock" style="font-size: 2rem; font-weight: 600; color: #b74b4b;"></div>
+</footer>
+
+<script>
+    function updateClock() {
+        const clockElement = document.getElementById('clock');
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    setInterval(updateClock, 1000); 
+    updateClock(); 
+</script>

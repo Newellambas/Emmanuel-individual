@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style1.css"> 
+    <link rel="shortcut icon" type="image/jpg" href="logo.jpg">
+    <title>Extra</title>
+</head>
+<body>
+
+ <video autoplay loop muted playsinline style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;">
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <header id="header">
+        <a href="#" class="logo">UNJI</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="edu.html">Journey</a>
+            <a href="skills.html">Skills</a>
+            <a href="extra.html" class="active">Extra</a>
+            <a href="gal.html">Gallery</a>
+            <a href="cont.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="extra">
+        <h1>MUSIC AND GAMES</h1>
+        <section class="extra-page">
+            <div class="genre-category">
+                <h2>LOFI</h2>
+                <div class="music-links">
+                    <a href="https://open.spotify.com/track/72iqZG1zy55rXQPBBB4a21?si=d0c78b5edcb7454d" target="_blank">LAV8 - Redbone</a>
+                    <a href="https://open.spotify.com/track/58Bdz7Q169M2BGg9zzKxv8?si=383e868c680346f6" target="_blank"><3BEAT - A Sky Full Of Stars</a>
+                    <a href="https://open.spotify.com/track/1nIvUHUPtKLz59eMCGlppe?si=80d7a61106e84645" target="_blank">LAV8 - Feel Good Inc</a>
+                </div>
+            </div>
+
+            <div class="genre-category">
+                <h2>EDM</h2>
+                <div class="music-links">
+                    <a href="https://open.spotify.com/track/0nrRP2bk19rLc0orkWPQk2?si=1d556a62206142da" target="_blank">Avicii - Wake Me Up</a>
+                    <a href="https://open.spotify.com/track/6NRvZuFXn2ixp8YdzUvG5n?si=dcf2d3d0d7f64c1e" target="_blank">Skrillex - Leave Me Like This</a>
+                    <a href="https://open.spotify.com/track/6DtU5J0xK0Law03cXT6ar5?si=70034ea9d1294783" target="_blank">Zedd - Lucky</a>
+                </div>
+            </div>
+
+            <div class="genre-category">
+                <h2>MY MUSIC</h2>
+                <div class="music-links">
+                    <a href="https://open.spotify.com/track/1MM4DETLWHxZXINGnUBQlQ?si=4d086a667dc14f78" target="_blank">Lock Chords - Paradise</a>
+                    <a href="https://open.spotify.com/track/1PQGPPEaM8JNvrP0QELv6p?si=d1bb452a540446cb">Lock Chords - Shadow</a>
+                    <a href="https://open.spotify.com/track/0M5plc1RLBMNKUWAmfamkC?si=e01b9f8f806d4561" target="_blank">Lock Chords - Trouble</a>
+                </div>
+            </div>
+            
+            <!-- YouTube Videos Section -->
+            <div class="video-category">
+                <div class="video-box">
+                    <iframe width="1188" height="668" src="https://www.youtube.com/embed/gmA6MrX81z4" title="Red Dead Redemption 2 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+
+
+
+
+
+                <div class="video-box">
+                    <iframe width="1188" height="668" src="https://www.youtube.com/embed/-b0veB7q9P4" title="Marvel Rivals | Launch Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+
+                <div class="video-box">
+                    <iframe width="1188" height="668" src="https://www.youtube.com/embed/zqLy6pPmupo" title="Counter-Strike 2 - Official Launch Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+               
+                header.style.top = "-80px"; 
+            } else {
+                
+                header.style.top = "0";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+</body>
+</html>
